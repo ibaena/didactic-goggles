@@ -8,4 +8,16 @@
     height: 40px;
     text-align: center;
     margin: 0 auto;
+
+    .blue-bg {
+        background: blue;
+        height: 40px;
+        width: 50%;
+    }
+    .red-bg {
+        background: red;
+        height: 40px;
+        width: 50%;
+        margin-left: 50%;
+    }
 }
