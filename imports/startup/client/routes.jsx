@@ -1,0 +1,22 @@
+import {FlowRouter} from 'meteor/kadira:flow-router';
+import React from 'react';
+import {mount} from 'react-mounter';
+
+//Layouts and Pages
+import { App } from '../../ui/layouts/App.jsx'
+import Home from '../../ui/pages/Home.jsx'
+
+FlowRouter.route('/', {
+    action() {
+        mount(App, {
+            content: <Home />
+        });
+    }
+});
+FlowRouter.route('/two', {
+    action() {
+        mount(App, {
+            content: 'Ivan Second Page'
+        });
+    }
+});
