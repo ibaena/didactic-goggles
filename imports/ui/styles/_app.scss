@@ -1,5 +1,19 @@
-/*****************************
-   All Style Partials Here
-*****************************/
+/*********************************
+   All Page Style Partials Here
+*********************************/
 
 @import "{}/imports/ui/styles/pages/home.scss";
+
+
+/**************************************
+   All Component Style Partials Here
+**************************************/
+
+@import "{}/imports/ui/styles/components/nav.scss";
+
+
+/**************************************
+   All Base Style Partials Here
+**************************************/
+
+@import "{}/imports/ui/styles/base/variables.scss";

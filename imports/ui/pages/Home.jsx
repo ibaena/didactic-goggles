@@ -13,7 +13,7 @@ export default class Home extends Component {
   }
   render() {
     return (
-      <div className="container" id="test">
+      <div className="page-container" id="homePage">
           I'm the Home Layout!
       </div>
     );
