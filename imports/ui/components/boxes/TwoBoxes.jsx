@@ -15,8 +15,12 @@ export default class TwoBoxes extends Component {
   render() {
     return (
         <div className="two-box-container">
-          <div className="box-one"></div>
-          <div className="box-two"></div>
+          <div className="box-one">
+            <span id="ny">h</span>
+          </div>
+          <div className="box-two">
+            <span id="pa">l</span>
+          </div>
         </div>
 
     );
