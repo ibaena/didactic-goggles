@@ -10,29 +10,29 @@ export default class Nav extends Component {
   }
 
   componentDidMount(){
-    $('.menu').hide();
+    $('.nav-wrapper').hide();
     $('.activate-menu').on('click', () => {
-      $('.menu').toggle("slide", { direction: "right" }, 500)
+      $('.activate-menu').animate({width:'toggle'},300);
+        setTimeout( () => {
+          $('.nav-wrapper').toggle('slide',{direction:'left'}, 400);
+        },500);
     });
-    $('.btn--menu').on('click', () => {
-        $('.not--x__piece--1, .not--x__piece--2, .not--x__piece--3, .not--x__piece--4').toggleClass('is--x');
-      });
+
+    $('.nav-wrapper').on('mouseleave', () => {
+      $('.nav-wrapper').toggle('slide',{direction:'left'}, 400);
+      setTimeout( () => {
+          $('.activate-menu').toggle('slide',{direction:'left'}, 300);
+      },500);
+    });
+
   }
   render() {
     return (
       <nav className="nav-container">
-        <button type='button' className='btn btn--menu activate-menu'>
-          <span className='x__piece'></span>
-          <span className='not--x__piece not--x__piece--1'></span>
-          <span className='x__piece'></span>
-          <span className='not--x__piece not--x__piece--2'></span>
-          <span className='x__piece'></span>
-          <span className='not--x__piece not--x__piece--3'></span>
-          <span className='x__piece'></span>
-          <span className='not--x__piece not--x__piece--4'></span>
-          <span className='x__piece'></span>
-        </button>
-          <div className="menu"></div>
+        <a className="activate-menu" ></a>
+        <div className="nav-wrapper">
+
+        </div>
       </nav>
     );
   }

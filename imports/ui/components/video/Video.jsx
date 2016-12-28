@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 
 // App component - represents the whole app
-export default class LandingLeft extends Component {
+export default class Video extends Component {
   // Note: In ES6, constructor() === componentWillMount() in React ES5
   constructor() {
     super();
@@ -14,8 +14,10 @@ export default class LandingLeft extends Component {
   }
   render() {
     return (
-      <div id="landing-l-container">
-
+      <div id="video-container">
+        <video id="fullscreen-video"  loop autoPlay>
+          <source src="videos/particles.mp4" type="video/mp4" />
+        </video>
       </div>
     );
   }

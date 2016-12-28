@@ -1,0 +1,16 @@
+.border {
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    margin: 30px 0 0 30px;
+    border: 1px solid rgba(245, 245, 245, 0.2);
+    width: -moz-calc(100% - 62px);
+    height: -moz-calc(100% - 62px);
+    width: -webkit-calc(100% - 62px);
+    height: -webkit-calc(100% - 62px);
+    width: -o-calc(100% - 62px);
+    height: -o-calc(100% - 62px);
+    width: calc(100% - 62px);
+    height: calc(100% - 62px);
+    background: none !important;
+}

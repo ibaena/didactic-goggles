@@ -1,0 +1,49 @@
+/*********************
+      Box Styles
+*********************/
+.main-box {
+    width: 325px;
+    height: 310px;
+    border-style: solid;
+    border-color: #323132;
+    border-width: 3px;
+    position: relative;
+    top: 30vh;
+    left: 25vw;
+    cursor:pointer;
+
+    .main-box-text {
+        color:white;
+        float: left;
+        margin-left: 1em;
+        font-size: 26px;
+    }
+    .main-box-text-bot {
+        color:white;
+        float: left;
+        margin-right: 1em;
+        font-size: 26px;
+        position: absolute;
+        bottom: 0;
+        right:0;
+    }
+    .main-box-overlay {
+        height: 310px;
+        width: 325px;
+        position:absolute;
+        background:white;
+        color:black;
+
+        .main-box-text {
+            color:black;
+        }
+        .main-box-text-bot {
+            color: black;
+        }
+    }
+}
+
+
+.pointer {
+    cursor: pointer !important;
+}

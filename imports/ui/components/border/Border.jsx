@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 
+import Nav from '../nav/Nav.jsx';
+import MainBox from '../boxes/MainBox.jsx';
 
 // App component - represents the whole app
-export default class LandingRight extends Component {
+export default class Border extends Component {
   // Note: In ES6, constructor() === componentWillMount() in React ES5
   constructor() {
     super();
@@ -14,8 +16,9 @@ export default class LandingRight extends Component {
   }
   render() {
     return (
-      <div id="landing-r-container">
-
+      <div className="border">
+        <Nav />
+        <MainBox />
       </div>
     );
   }
