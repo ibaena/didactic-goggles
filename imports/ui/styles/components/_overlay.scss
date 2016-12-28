@@ -1,0 +1,26 @@
+/***********************
+    Overlay Styles
+***********************/
+.white-overlay {
+    background-color: white;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+
+    .dismiss-white {
+        border-style: solid;
+        border-color: black;
+        border-width: thin;
+        height: 35px;
+        width: 40px;
+        position: absolute;
+        top: 2vh;
+        right: 2vw;
+        text-align: center;
+        padding-top: 0.5em;
+        cursor: pointer;
+        padding-left: .2em;
+        padding-right: .2em;
+    }
+}

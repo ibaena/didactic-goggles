@@ -1,0 +1,32 @@
+/*************************
+      Two Boxes Styles
+*************************/
+.two-box-container {
+
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    right: 0;
+    bottom:0;
+
+    .box-one {
+        height: 125px;
+        width: 130px;
+        border-style:solid;
+        border-width: thin;
+        border-color: #323132;
+        position:absolute;
+        top:20vh;
+    }
+
+    .box-two {
+        height: 125px;
+        width: 130px;
+        border-style:solid;
+        border-width: thin;
+        border-color: #323132;
+        position:absolute;
+        top:75px;
+        left:6.9vw;
+    }
+}

@@ -29,7 +29,7 @@ export default class Nav extends Component {
   render() {
     return (
       <nav className="nav-container">
-        <a className="activate-menu" ></a>
+        <a className="activate-menu" ><i className="material-icons" id="nav-icon">widgets</i></a>
         <div className="nav-wrapper">
 
         </div>

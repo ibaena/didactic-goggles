@@ -7,15 +7,16 @@
         left: 0;
         top: 0;
         z-index: 10;
-        border: solid;
         text-align: center;
-        border-width: thin;
-        border-color: rgba(245, 245, 245, 0.2);
-        z-index: 1;
+        z-index: 99;
         height: 60px;
         width: 60px;
-        background: white;
+        background: transparent;
         cursor: pointer;
+        i {
+            font-size: 60px;
+            color:white;
+        }
     }
 
     .nav-wrapper {
@@ -23,9 +24,13 @@
         top: 0;
         bottom: 0;
         left: 0;
-        background: yellow;
         height: 100%;
         width: 15vw;
+        border-right-style: solid;
+        border-right-color: rgba(255, 255, 255, 0.5);
+        border-right-width: thin;
+        background: rgba(255, 255, 255, 0.5);
+        z-index: 999;
     }
 }
 /************************
