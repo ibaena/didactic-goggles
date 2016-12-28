@@ -11,12 +11,14 @@ export default class TwoBoxes extends Component {
   }
 
   componentDidMount(){
+    $( ".box-one" ).draggable({ containment: 'parent' });
+    $( ".box-two" ).draggable({ containment: 'parent' });
   }
   render() {
     return (
         <div className="two-box-container">
           <div className="box-one">
-            <span id="ny">h</span>
+            <hr className="rotate-hr" />
           </div>
           <div className="box-two">
             <span id="pa">l</span>
