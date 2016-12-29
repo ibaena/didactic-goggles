@@ -12,7 +12,7 @@ export default class Nav extends Component {
   componentDidMount(){
     $('.nav-wrapper').hide();
     $('.activate-menu').on('click', () => {
-      $('.activate-menu').animate({width:'toggle'},300);
+      $('.btn-nav').animate({width:'toggle'},300);
         setTimeout( () => {
           $('.nav-wrapper').toggle('slide',{direction:'left'}, 400);
         },500);
@@ -21,15 +21,27 @@ export default class Nav extends Component {
     $('.nav-wrapper').on('mouseleave', () => {
       $('.nav-wrapper').toggle('slide',{direction:'left'}, 400);
       setTimeout( () => {
-          $('.activate-menu').toggle('slide',{direction:'left'}, 300);
+          $('.btn-nav').toggle('slide',{direction:'left'}, 300);
       },500);
+      $(".bar").toggleClass("animated");
     });
+
+    $(".btn-nav").on("click tap", function(){
+      $(".bar").toggleClass("animated");
+    });
+
 
   }
   render() {
     return (
       <nav className="nav-container">
-        <a className="activate-menu" ><i className="material-icons" id="nav-icon">widgets</i></a>
+        <a className="activate-menu" >
+        <btn className="btn-nav">
+          <div className="bar bar-top"></div>
+          <div className="bar bar-mid"></div>
+          <div className="bar bar-bot"></div>
+        </btn>
+        </a>
         <div className="nav-wrapper">
 
         </div>

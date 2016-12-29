@@ -36,99 +36,39 @@
 /************************
         Nav Button
 ************************/
-.btn {
-    border: none;
-    text-decoration: none;
-    outline: none;
-
-    &--menu {
-        width: 44px;
-        height: 44px;
-        background: none;
-        position: fixed;
-        border-radius: 2px;
-        top: 24px;
-        left: 24px;
-        z-index: 100;
-        /* box-shadow: 0px 1px 1px rgba(0, 0, 0, .15); */
-        span {
-            border-radius: 50%;
-            width: 6px;
-            height: 6px;
-            display: block;
-            float: left;
-            margin: 2px;
-            position: relative;
-            box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
-        }
-    }
+.btn-nav{
+   width: 40px;
+   position:fixed;
+   top: 3vh;
+   left: 3vh;
+   display: block;
 }
-
-.not--x__piece {
-    background: #2e42ac;
-    position: relative;
-    transition: all 0.25s ease-out;
-
-    &:hover {
-        background: lighten(#2e42ac, 30%);
-        transition: all 0.25s ease-out;
-    }
-
-    &--1 {
-        top: 0;
-        left: 0;
-        transition: all 0.25s ease-out;
-    }
-
-    &--2 {
-        top: 0;
-        left: 0;
-        transition: all 0.25s ease-out;
-    }
-
-    &--3 {
-        top: 0;
-        left: 0;
-        transition: all 0.25s ease-out;
-    }
-
-    &--4 {
-        top: 0;
-        left: 0;
-        transition: all 0.25s ease-out;
-    }
-
-    &--1.is--x {
-        top: 5px;
-        left: 5px;
-        transition: all 0.25s ease-out;
-    }
-
-    &--2.is--x {
-        top: 5px;
-        left: 15px;
-        transition: all 0.25s ease-out;
-    }
-
-    &--3.is--x {
-        top: 5px;
-        left: -15px;
-        transition: all 0.25s ease-out;
-    }
-
-    &--4.is--x {
-        top: -15px;
-        left: -5px;
-        transition: all 0.25s ease-out;
-    }
+.bar{
+   display: block;
+   width: 35px;
+   border: white solid 2px;
+   border-radius: 2px;
+   margin: 10px;
+      -webkit-transition: all 1s 0s;
+   -moz-transition: all 1s 0s;
+   -ms-transition: all 1s 0s;
+   -o-transition: all 1s 0s;
+   transition: all 1s 0s;
 }
-
-.x__piece {
-    background: #2e42ac;
-    transition: all 0.25s ease-out;
-
-    &:hover {
-        background: lighten(#2e42ac, 30%);
-        transition: all 0.25s ease-out;
-    }
+.animated{
+   z-index: 100;
+}
+.bar-top.animated{
+   -ms-transform: translate(0px,13px) rotate(-45deg); /* IE 9 */
+   -webkit-transform: translate(0px,13px) rotate(-45deg); /* Safari */
+    transform: translate(0px,13px) rotate(-45deg);
+}
+.bar-mid.animated{
+   width: 0px;
+   transform: translate(17px, 0px);
+}
+.bar-bot.animated{
+   -ms-transform: translate(0px,-13px) rotate(45deg); /* IE 9 */
+   -webkit-transform: translate(0px,-13px) rotate(45deg); /* Safari */
+    transform: translate(0px,-14px) rotate(45deg);
 }
