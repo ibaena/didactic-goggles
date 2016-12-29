@@ -9,7 +9,8 @@
 .slider-container {
     .slider-wrapper {
         @include span-columns(12);
-        position:absolute;
+        position: absolute;
+
         .project-image {
             @include span-columns(4);
             position: relative;
@@ -22,7 +23,7 @@
 
             .project-title {
                 @include shift(1.5);
-                margin-bottom: .3em;
+                margin-bottom: 0.3em;
             }
 
             .project-info {
@@ -66,9 +67,9 @@
     position: absolute;
     bottom: 0;
 
-
     .selector-list {
-        text-align:center;
+        text-align: center;
+
         .selector-list-item {
             list-style: none;
             width: 15%;
@@ -76,16 +77,26 @@
             display: inline-block;
 
             .selector-image {
-                border-style:solid;
-                border-width:thin;
+                border-style: solid;
+                border-width: thin;
                 border-radius: 3px;
-                border-color:rgb(195, 195, 195);
-                padding:5px;
-                cursor:pointer;
+                border-color: rgb(195, 195, 195);
+                padding: 5px;
+                cursor: pointer;
                 height: 200px;
                 width: 225px;
-
             }
         }
     }
+}
+
+#single {
+    width: 20%;
+    height: 2px;
+    border: none;
+    background: #383838;
+    transform: rotate(38deg);
+    position: absolute;
+    top: 70%;
+    left: 38%;
 }
