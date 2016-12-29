@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 
 // App component - represents the whole app
 export default class Selector extends Component {
+
   // Note: In ES6, constructor() === componentWillMount() in React ES5
   constructor() {
     super();
@@ -12,6 +13,7 @@ export default class Selector extends Component {
   componentDidMount(){
 
   }
+
   getImages() {
     return [
       { _id: 1, name:'DownTown Tampa', project_src:'http://placehold.it/200x125' },
@@ -23,13 +25,14 @@ export default class Selector extends Component {
 
   renderImages() {
     return this.getImages().map((item) => (
-      <li className="selector-list-item" key={item._id}><img src={item.project_src} className="selector-image" /></li>
+      <li className="selector-list-item" id={'project-'+item._id} key={item._id} ref={'project-'+item._id}><img src={item.project_src} className="selector-image" /></li>
     ));
   }
+
   render() {
     return (
       <div className="selector-container">
-        <ul className="selector-list">
+        <ul className="selector-list" id="test">
           {this.renderImages()}
         </ul>
       </div>

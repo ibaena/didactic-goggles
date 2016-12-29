@@ -9,6 +9,7 @@
 .slider-container {
     .slider-wrapper {
         @include span-columns(12);
+        position:absolute;
         .project-image {
             @include span-columns(4);
             position: relative;
@@ -54,6 +55,9 @@
 
 .selector-container {
     @include span-columns(12);
+    position: absolute;
+    bottom: 0;
+
 
     .selector-list {
         text-align:center;
