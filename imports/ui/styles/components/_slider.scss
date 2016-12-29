@@ -1,0 +1,77 @@
+/******************
+  Slider Styles
+******************/
+.fw-image {
+    width: auto;
+    height: 600px;
+}
+
+.slider-container {
+    .slider-wrapper {
+        @include span-columns(12);
+        .project-image {
+            @include span-columns(4);
+            position: relative;
+            padding: 5em;
+        }
+
+        .project-description {
+            @include span-columns(8);
+            padding: 8em 5em 0;
+
+            .project-title {
+                @include shift(1.5);
+            }
+
+            .project-info {
+                @include span-columns(5);
+                @include shift(1);
+                text-align: justify;
+                line-height: 20px;
+            }
+
+            .role-wrapper {
+                @include span-columns(10);
+                @include shift(1);
+                margin-top: 4em;
+
+                .role-title {
+                    text-align: center;
+                }
+
+                .role-list {
+                    .role-list-item {
+                        list-style: none;
+                        width: 30%;
+                        float: right;
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.selector-container {
+    @include span-columns(12);
+
+    .selector-list {
+        text-align:center;
+        .selector-list-item {
+            list-style: none;
+            width: 15%;
+            margin: 0 auto;
+            display: inline-block;
+
+            .selector-image {
+                border-style:solid;
+                border-width:thin;
+                padding:5px;
+                cursor:pointer;
+                height: 125px;
+                width:200px;
+
+            }
+        }
+    }
+}

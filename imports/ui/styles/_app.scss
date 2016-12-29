@@ -1,4 +1,11 @@
 /*********************************
+        Bourbon & Neat
+*********************************/
+
+@import "{wolves:bourbon}/bourbon";
+@import "{wolves:neat}/neat";
+
+/*********************************
    All Page Style Partials Here
 *********************************/
 
@@ -16,6 +23,7 @@
 @import "{}/imports/ui/styles/components/boxes.scss";
 @import "{}/imports/ui/styles/components/twoboxes.scss";
 @import "{}/imports/ui/styles/components/overlay.scss";
+@import "{}/imports/ui/styles/components/slider.scss";
 
 
 /**************************************
