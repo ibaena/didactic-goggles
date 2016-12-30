@@ -33,7 +33,7 @@
                 font-size: calc(1vw + 1px);
                 position: relative;
                 left: 6vw;
-                bottom: 1vh;
+                bottom: 0;
             }
 
             .role-wrapper {
@@ -75,17 +75,15 @@
                 left: 30vw;
                 text-decoration: none;
 
-
                 .web-launch {
                     color: black;
                     text-align: center;
                     padding: 0.5em;
-                    height:100%;
+                    height: 100%;
                 }
             }
-            .web-launch:hover {
 
-            }
+            .web-launch:hover {}
         }
     }
 }
@@ -97,12 +95,15 @@
 
     .selector-list {
         text-align: center;
+        padding: 0;
 
         .selector-list-item {
             list-style: none;
-            width: calc(100% - 75%);
+            width: calc(100% - 88%);
             margin: 0 auto;
             display: inline-block;
+            margin-right: 3vw;
+            margin-left: 3vw;
 
             .selector-image {
                 border-style: solid;
@@ -111,8 +112,10 @@
                 border-color: #c3c3c3;
                 padding: 0.5em;
                 cursor: pointer;
+                display: block;
                 height: calc(11em - 15px);
                 width: calc(11em - 5px);
+                margin: 0 auto;
             }
         }
     }

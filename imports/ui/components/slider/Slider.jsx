@@ -70,6 +70,7 @@ export default class Slider extends Component {
                   slide2.find('.project-description').find('.project-title').hide('slide',{direction:'up'},600);
                   slide2.find('.project-description').find('.project-info').hide('slide',{direction:'down'},600);
                   slide2.find('.project-description').find('.web-link').hide('slide',{direction:'left'},400);
+                  $('.white-overlay').toggleClass('hvr-slider-hover');
                   slide2.find('#single').fadeOut();
                   slide2.find('#double').fadeOut();
 
@@ -278,7 +279,7 @@ export default class Slider extends Component {
     return [
       { _id: 1, name:'DownTown Tampa', web:'http://downtowntampa.staging.wpengine.com/', project_src:'http://placehold.it/200x125', role:'Google API Developer', agency: 'Vision Creative Group', year:'2016', info:'Where to Start - With so many options for things to do in Tampa\'s Downtown, the challenge is not deciding where to go, it\'s deciding where to start.' },
       { _id: 2, name:'Amloid', web:'http://amloid.com/', project_src:'http://placehold.it/200x225', role:'Web Developer', agency: 'Vision Creative Group', year:'2016', info:'Amloid proudly brings 100 years of unwavering commitment to its founder’s vision: to create quality, affordable, and fun toys. Innovative design and exacting attention to detail continue to produce unique product lines that have delighted generations of children around the world.' },
-      { _id: 3, name:'Feverall', web:'tarofever.wpengine.com', project_src:'http://placehold.it/200x325', role:'Web Developer', agency: 'Vision Creative Group', year:'2016', info:'FeverAll® is a suppository form of acetaminophen, the common fever remedy known and trusted by pediatricians. Available in 3 strengths for infants or children of different ages, FeverAll® suppositories provide an effective dosing alternative for children who won’t or can’t take medication orally' },
+      { _id: 3, name:'Feverall', web:'http://tarofever.wpengine.com', project_src:'http://placehold.it/200x325', role:'Web Developer', agency: 'Vision Creative Group', year:'2016', info:'FeverAll® is a suppository form of acetaminophen, the common fever remedy known and trusted by pediatricians. Available in 3 strengths for infants or children of different ages, FeverAll® suppositories provide an effective dosing alternative for children who won’t or can’t take medication orally' },
       { _id: 4, name:'Wine4Food', web:'http://wine4food.com', project_src:'http://placehold.it/200x425', role:'Front End Developer', agency: 'Vision Creative Group', year:'2016', info:'Wine4Food is the number one destination for everything Wine & Food Related. Wine Tastings & Wine Dinner Party Ideas to Food & Wine Pairings and Recipes.' },
     ];
   }
