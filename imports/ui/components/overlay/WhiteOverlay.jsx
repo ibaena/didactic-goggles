@@ -31,6 +31,7 @@ export default class WhiteOverlay extends Component {
       slide2.find('.project-description').find('.role-wrapper').hide('slide',{direction:'right'},600);
       slide2.find('.project-description').find('.project-title').hide('slide',{direction:'up'},600);
       slide2.find('.project-description').find('.project-info').hide('slide',{direction:'down'},600);
+      slide2.find('.project-description').find('.web-link').hide('slide',{direction:'left'},400);
       slide2.find('#single').fadeOut();
       slide2.find('#double').fadeOut();
 
@@ -38,6 +39,7 @@ export default class WhiteOverlay extends Component {
       slide3.find('.project-description').find('.role-wrapper').hide('slide',{direction:'right'},600);
       slide3.find('.project-description').find('.project-title').hide('slide',{direction:'up'},600);
       slide3.find('.project-description').find('.project-info').hide('slide',{direction:'down'},600);
+      slide3.find('.project-description').find('.web-link').hide('slide',{direction:'left'},400);
       slide3.find('#single').fadeOut();
       slide3.find('#double').fadeOut();
 
@@ -45,6 +47,7 @@ export default class WhiteOverlay extends Component {
       slide4.find('.project-description').find('.role-wrapper').hide('slide',{direction:'right'},600);
       slide4.find('.project-description').find('.project-title').hide('slide',{direction:'up'},600);
       slide4.find('.project-description').find('.project-info').hide('slide',{direction:'down'},600);
+      slide4.find('.project-description').find('.web-link').hide('slide',{direction:'left'},400);
       slide4.find('#single').fadeOut();
       slide4.find('#double').fadeOut();
 
@@ -52,6 +55,7 @@ export default class WhiteOverlay extends Component {
       slide1.find('.project-description').find('.role-wrapper').hide('slide',{direction:'right'},600);
       slide1.find('.project-description').find('.project-title').hide('slide',{direction:'up'},600);
       slide1.find('.project-description').find('.project-info').hide('slide',{direction:'down'},600);
+      slide1.find('.project-description').find('.web-link').hide('slide',{direction:'left'},400);
       slide1.find('#single').fadeOut();
       slide1.find('#double').fadeOut();
     });
@@ -67,6 +71,7 @@ export default class WhiteOverlay extends Component {
       slide2.find('.project-description').find('.role-wrapper').hide('slide',{direction:'right'},600);
       slide2.find('.project-description').find('.project-title').hide('slide',{direction:'up'},600);
       slide2.find('.project-description').find('.project-info').hide('slide',{direction:'down'},600);
+      slide2.find('.project-description').find('.web-link').hide('slide',{direction:'left'},400);
       slide2.find('#single').fadeOut();
       slide2.find('#double').fadeOut();
 
@@ -74,6 +79,7 @@ export default class WhiteOverlay extends Component {
       slide3.find('.project-description').find('.role-wrapper').hide('slide',{direction:'right'},600);
       slide3.find('.project-description').find('.project-title').hide('slide',{direction:'up'},600);
       slide3.find('.project-description').find('.project-info').hide('slide',{direction:'down'},600);
+      slide3.find('.project-description').find('.web-link').hide('slide',{direction:'left'},400);
       slide3.find('#single').fadeOut();
       slide3.find('#double').fadeOut();
 
@@ -81,6 +87,7 @@ export default class WhiteOverlay extends Component {
       slide4.find('.project-description').find('.role-wrapper').hide('slide',{direction:'right'},600);
       slide4.find('.project-description').find('.project-title').hide('slide',{direction:'up'},600);
       slide4.find('.project-description').find('.project-info').hide('slide',{direction:'down'},600);
+      slide4.find('.project-description').find('.web-link').hide('slide',{direction:'left'},400);
       slide4.find('#single').fadeOut();
       slide4.find('#double').fadeOut();
 
@@ -88,6 +95,7 @@ export default class WhiteOverlay extends Component {
       slide1.find('.project-description').find('.role-wrapper').hide('slide',{direction:'right'},600);
       slide1.find('.project-description').find('.project-title').hide('slide',{direction:'up'},600);
       slide1.find('.project-description').find('.project-info').hide('slide',{direction:'down'},600);
+      slide1.find('.project-description').find('.web-link').hide('slide',{direction:'left'},400);
       slide1.find('#single').fadeOut();
       slide1.find('#double').fadeOut();
     });

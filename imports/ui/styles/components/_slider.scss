@@ -40,7 +40,6 @@
                 @include span-columns(10);
                 position: relative;
                 left: 5vw;
-
                 margin-top: calc(1em - 5px);
 
                 .role-title {
@@ -63,6 +62,29 @@
                         }
                     }
                 }
+            }
+
+            .web-link {
+                height: 40px !important;
+                width: 200px;
+                border-style: solid;
+                border-width: thin;
+                border-color: black;
+                position: absolute;
+                top: 45vh;
+                left: 30vw;
+                text-decoration: none;
+
+
+                .web-launch {
+                    color: black;
+                    text-align: center;
+                    padding: 0.5em;
+                    height:100%;
+                }
+            }
+            .web-launch:hover {
+
             }
         }
     }

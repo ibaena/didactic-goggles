@@ -1,0 +1,44 @@
+/******************
+   Media Queries
+******************/
+@media screen and (min-width: 769px) {
+    .fw-image {
+        width: calc(30vw - 20px);
+        height: calc(50vh - 10px);
+    }
+
+    .role-wrapper {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 82.94039%;
+        position: relative;
+        left: 1vw;
+        top: 8vh;
+        margin-top: calc(1em - 5px);
+    }
+
+    .project-description {
+        position: relative;
+        top: 2vh;
+    }
+
+    .project-info {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 40.29137%;
+        text-align: justify;
+        line-height: calc(1vw + 10px) !important;
+        height: 90px;
+        font-size: calc(1vw + 1px);
+        position: relative;
+        left: 6vw;
+        bottom: 0;
+    }
+
+    .selector-image {
+        height: calc(20vh - 5px) !important;
+        width: calc(11vw - 5px) !important;
+    }
+}
