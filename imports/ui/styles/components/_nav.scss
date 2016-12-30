@@ -39,8 +39,8 @@
 .btn-nav{
    width: 40px;
    position:fixed;
-   top: 3vh;
-   left: 3vh;
+   top: calc(4vh + 5px);
+   left: calc(4vh + 4px);
    display: block;
 }
 .bar{

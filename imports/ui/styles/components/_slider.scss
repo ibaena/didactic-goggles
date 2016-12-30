@@ -2,8 +2,8 @@
   Slider Styles
 ******************/
 .fw-image {
-    width: 600px;
-    height: 550px;
+    width: calc(25em - 20px);
+    height: calc(21em - 10px);
 }
 
 .slider-container {
@@ -14,12 +14,11 @@
         .project-image {
             @include span-columns(4);
             position: relative;
-            padding: 5em;
+            padding: calc(2em + 20px);
         }
 
         .project-description {
             @include span-columns(8);
-            padding: 8em 5em 0;
 
             .project-title {
                 @include shift(1.5);
@@ -31,13 +30,14 @@
                 @include shift(1);
                 text-align: justify;
                 line-height: 22px;
-                height: 100px;
+                height: 90px;
+                font-size: calc(1vw + 1px);
             }
 
             .role-wrapper {
                 @include span-columns(10);
                 @include shift(1);
-                margin-top: 4em;
+                margin-top: calc(1em - 5px);
 
                 .role-title {
                     text-align: center;
@@ -47,13 +47,15 @@
                     .role-list-item {
                         list-style: none;
                         width: 30%;
-                        float: right;
+                        float: left;
                         text-align: right;
                         font-weight: bold;
+                        font-size: calc(1vw + -1px);
 
                         .role-value {
                             margin-top: 1em;
                             font-weight: 100;
+                            font-size: calc(1vw + 2px);
                         }
                     }
                 }
@@ -72,7 +74,7 @@
 
         .selector-list-item {
             list-style: none;
-            width: 15%;
+            width: calc(100% - 75%);
             margin: 0 auto;
             display: inline-block;
 
@@ -80,23 +82,34 @@
                 border-style: solid;
                 border-width: thin;
                 border-radius: 3px;
-                border-color: rgb(195, 195, 195);
-                padding: 5px;
+                border-color: #c3c3c3;
+                padding: 0.5em;
                 cursor: pointer;
-                height: 200px;
-                width: 225px;
+                height: calc(11em - 15px);
+                width: calc(11em - 5px);
             }
         }
     }
 }
 
 #single {
-    width: 20%;
-    height: 2px;
+    width: 10%;
+    height: 1px;
     border: none;
     background: #383838;
-    transform: rotate(38deg);
-    position: absolute;
-    top: 70%;
-    left: 38%;
+    transform: rotate(45deg);
+    position: fixed;
+    top: 47%;
+    left: 36%;
+}
+
+#double {
+    width: 15%;
+    height: 1px;
+    border: none;
+    background: #383838;
+    transform: rotate(45deg);
+    position: fixed;
+    top: 20%;
+    left: 75%;
 }

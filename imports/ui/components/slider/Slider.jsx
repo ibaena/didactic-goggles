@@ -25,21 +25,29 @@ export default class Slider extends Component {
     slide1.find('.project-description').find('.role-wrapper').hide();
     slide1.find('.project-description').find('.project-title').hide();
     slide1.find('.project-description').find('.project-info').hide();
+    slide1.find('#single').hide();
+    slide1.find('#double').hide();
 
     slide2.find('.project-image').find('.fw-image').hide();
     slide2.find('.project-description').find('.role-wrapper').hide();
     slide2.find('.project-description').find('.project-title').hide();
     slide2.find('.project-description').find('.project-info').hide();
+    slide2.find('#single').hide();
+    slide2.find('#double').hide();
 
     slide3.find('.project-image').find('.fw-image').hide();
     slide3.find('.project-description').find('.role-wrapper').hide();
     slide3.find('.project-description').find('.project-title').hide();
     slide3.find('.project-description').find('.project-info').hide();
+    slide3.find('#single').hide();
+    slide3.find('#double').hide();
 
     slide4.find('.project-image').find('.fw-image').hide();
     slide4.find('.project-description').find('.role-wrapper').hide();
     slide4.find('.project-description').find('.project-title').hide();
     slide4.find('.project-description').find('.project-info').hide();
+    slide4.find('#single').hide();
+    slide4.find('#double').hide();
 
     $('.selector-list').find('.selector-list-item').on('click', function() {
           let compare = this.id;
@@ -80,10 +88,16 @@ export default class Slider extends Component {
                   slide1.find('.project-description').find('.project-title').toggle('slide',{direction:'up'},600);
                   slide1.find('.project-description').find('.project-info').toggle('slide',{direction:'down'},600);
 
+                  setTimeout( () => {
+                      slide1.find('#single').animate({ width: 'toggle'},500);
+                      slide1.find('#double').animate({ width: 'toggle'},500);
+                  },100);
+
                   slide2.hide();
                   slide3.hide();
                   slide4.hide();
-                },800)
+                },800);
+
 
                   break;
               case 'project-2':
@@ -114,6 +128,11 @@ export default class Slider extends Component {
                     slide2.find('.project-description').find('.role-wrapper').toggle('slide',{direction:'right'},600);
                     slide2.find('.project-description').find('.project-title').toggle('slide',{direction:'up'},600);
                     slide2.find('.project-description').find('.project-info').toggle('slide',{direction:'down'},600);
+
+                    setTimeout( () => {
+                        slide2.find('#single').animate({ width: 'toggle'},500);
+                        slide2.find('#double').animate({ width: 'toggle'},500);
+                    },100);
 
                     slide1.hide();
                     slide4.hide();
@@ -150,6 +169,11 @@ export default class Slider extends Component {
                   slide3.find('.project-description').find('.project-title').toggle('slide',{direction:'up'},600);
                   slide3.find('.project-description').find('.project-info').toggle('slide',{direction:'down'},600);
 
+                  setTimeout( () => {
+                      slide3.find('#single').animate({ width: 'toggle'},500);
+                      slide3.find('#double').animate({ width: 'toggle'},500);
+                  },100);
+
                   slide1.hide();
                   slide4.hide();
                   slide2.hide();
@@ -160,6 +184,9 @@ export default class Slider extends Component {
               var i = 0;
               console.log(i);
                 do {
+                  slide1.find('#single').animate({ width: 'toggle'},500);
+                  slide1.find('#double').animate({ width: 'toggle'},500);
+
                   slide1.find('.project-image').find('.fw-image').hide('slide',{direction:'left'},600);
                   slide1.find('.project-description').find('.role-wrapper').hide('slide',{direction:'right'},600);
                   slide1.find('.project-description').find('.project-title').hide('slide',{direction:'up'},600);
@@ -186,6 +213,11 @@ export default class Slider extends Component {
                   slide4.find('.project-description').find('.project-title').toggle('slide',{direction:'up'},600);
                   slide4.find('.project-description').find('.project-info').toggle('slide',{direction:'down'},600);
 
+                  setTimeout( () => {
+                      slide1.find('#single').animate({ width: 'toggle'},500);
+                      slide1.find('#double').animate({ width: 'toggle'},500);
+                  },100);
+
                   slide1.hide();
                   slide2.hide();
                   slide3.hide();
@@ -209,6 +241,7 @@ export default class Slider extends Component {
     return this.getProjects().map((item) => (
       <div className="slider-wrapper" key={item._id} id={item._id}>
       <hr id="single" />
+      <hr id="double" />
         <div className="project-image">
           <img src={item.project_src} className="fw-image" />
         </div>
