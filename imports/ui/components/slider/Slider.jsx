@@ -278,7 +278,6 @@ export default class Slider extends Component {
             {item.info}
           </p>
           <div className="role-wrapper">
-            <h1 className="role-title">Roles</h1>
             <ul className="role-list">
               <li className="role-list-item">Year<br />
               <p className="role-value">{item.year}</p>

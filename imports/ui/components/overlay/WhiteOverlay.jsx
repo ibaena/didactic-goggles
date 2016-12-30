@@ -27,6 +27,33 @@ export default class WhiteOverlay extends Component {
       slide2.fadeOut(100);
       slide3.fadeOut(100);
       slide4.fadeOut(100);
+      slide2.find('.project-image').find('.fw-image').hide('slide',{direction:'left'},600);
+      slide2.find('.project-description').find('.role-wrapper').hide('slide',{direction:'right'},600);
+      slide2.find('.project-description').find('.project-title').hide('slide',{direction:'up'},600);
+      slide2.find('.project-description').find('.project-info').hide('slide',{direction:'down'},600);
+      slide2.find('#single').fadeOut();
+      slide2.find('#double').fadeOut();
+
+      slide3.find('.project-image').find('.fw-image').hide('slide',{direction:'left'},600);
+      slide3.find('.project-description').find('.role-wrapper').hide('slide',{direction:'right'},600);
+      slide3.find('.project-description').find('.project-title').hide('slide',{direction:'up'},600);
+      slide3.find('.project-description').find('.project-info').hide('slide',{direction:'down'},600);
+      slide3.find('#single').fadeOut();
+      slide3.find('#double').fadeOut();
+
+      slide4.find('.project-image').find('.fw-image').hide('slide',{direction:'left'},600);
+      slide4.find('.project-description').find('.role-wrapper').hide('slide',{direction:'right'},600);
+      slide4.find('.project-description').find('.project-title').hide('slide',{direction:'up'},600);
+      slide4.find('.project-description').find('.project-info').hide('slide',{direction:'down'},600);
+      slide4.find('#single').fadeOut();
+      slide4.find('#double').fadeOut();
+
+      slide1.find('.project-image').find('.fw-image').hide('slide',{direction:'left'},600);
+      slide1.find('.project-description').find('.role-wrapper').hide('slide',{direction:'right'},600);
+      slide1.find('.project-description').find('.project-title').hide('slide',{direction:'up'},600);
+      slide1.find('.project-description').find('.project-info').hide('slide',{direction:'down'},600);
+      slide1.find('#single').fadeOut();
+      slide1.find('#double').fadeOut();
     });
     $('.dismiss-white').on('click', () => {
       $('.white-overlay').toggle('slide',{direction:'up'}, 800);
@@ -36,6 +63,33 @@ export default class WhiteOverlay extends Component {
       slide2.fadeOut(100);
       slide3.fadeOut(100);
       slide4.fadeOut(100);
+      slide2.find('.project-image').find('.fw-image').hide('slide',{direction:'left'},600);
+      slide2.find('.project-description').find('.role-wrapper').hide('slide',{direction:'right'},600);
+      slide2.find('.project-description').find('.project-title').hide('slide',{direction:'up'},600);
+      slide2.find('.project-description').find('.project-info').hide('slide',{direction:'down'},600);
+      slide2.find('#single').fadeOut();
+      slide2.find('#double').fadeOut();
+
+      slide3.find('.project-image').find('.fw-image').hide('slide',{direction:'left'},600);
+      slide3.find('.project-description').find('.role-wrapper').hide('slide',{direction:'right'},600);
+      slide3.find('.project-description').find('.project-title').hide('slide',{direction:'up'},600);
+      slide3.find('.project-description').find('.project-info').hide('slide',{direction:'down'},600);
+      slide3.find('#single').fadeOut();
+      slide3.find('#double').fadeOut();
+
+      slide4.find('.project-image').find('.fw-image').hide('slide',{direction:'left'},600);
+      slide4.find('.project-description').find('.role-wrapper').hide('slide',{direction:'right'},600);
+      slide4.find('.project-description').find('.project-title').hide('slide',{direction:'up'},600);
+      slide4.find('.project-description').find('.project-info').hide('slide',{direction:'down'},600);
+      slide4.find('#single').fadeOut();
+      slide4.find('#double').fadeOut();
+
+      slide1.find('.project-image').find('.fw-image').hide('slide',{direction:'left'},600);
+      slide1.find('.project-description').find('.role-wrapper').hide('slide',{direction:'right'},600);
+      slide1.find('.project-description').find('.project-title').hide('slide',{direction:'up'},600);
+      slide1.find('.project-description').find('.project-info').hide('slide',{direction:'down'},600);
+      slide1.find('#single').fadeOut();
+      slide1.find('#double').fadeOut();
     });
   }
   render() {
