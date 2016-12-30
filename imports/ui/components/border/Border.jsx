@@ -21,7 +21,6 @@ export default class Border extends Component {
       <div className="border">
         <Nav />
         <MainBox />
-        <TwoBoxes />
         <WhiteOverlay />
       </div>
     );

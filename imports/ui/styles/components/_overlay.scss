@@ -25,3 +25,12 @@
         z-index: 999;
     }
 }
+
+.trans-white {
+  background-color: white;
+  transition: background-color 2s;
+}
+.trans-red {
+  background-color: rgba(66, 165, 245, .7);;
+  transition: background-color 2s;
+}

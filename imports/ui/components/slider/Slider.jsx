@@ -70,7 +70,6 @@ export default class Slider extends Component {
                   slide2.find('.project-description').find('.project-title').hide('slide',{direction:'up'},600);
                   slide2.find('.project-description').find('.project-info').hide('slide',{direction:'down'},600);
                   slide2.find('.project-description').find('.web-link').hide('slide',{direction:'left'},400);
-                  $('.white-overlay').toggleClass('hvr-slider-hover');
                   slide2.find('#single').fadeOut();
                   slide2.find('#double').fadeOut();
 
@@ -103,10 +102,12 @@ export default class Slider extends Component {
                   slide1.find('.project-description').find('.project-info').toggle('slide',{direction:'down'},600);
 
 
+
                   setTimeout( () => {
                       slide1.find('#single').animate({ width: 'toggle'},500);
                       slide1.find('#double').animate({ width: 'toggle'},500);
                       slide1.find('.project-description').find('.web-link').toggle('slide',{direction:'left'},400);
+                      $('.white-overlay').toggleClass('trans-white trans-red');
                   },200);
 
                   slide2.hide();

@@ -98,12 +98,14 @@ export default class WhiteOverlay extends Component {
       slide1.find('.project-description').find('.web-link').hide('slide',{direction:'left'},400);
       slide1.find('#single').fadeOut();
       slide1.find('#double').fadeOut();
+
+        $('.white-overlay').removeClass('trans-red').addClass('trans-white');
     });
   }
   render() {
     return (
-      <div className="white-overlay">
-        <div className="dismiss-white"><i className="material-icons">swap_vert</i></div>
+      <div className="white-overlay trans-white">
+        <div className="dismiss-white hvr-shutter-in-vertical"><i className="material-icons">swap_vert</i></div>
         <Slider />
         <Selector />
       </div>
