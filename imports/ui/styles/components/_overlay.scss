@@ -30,7 +30,19 @@
   background-color: white;
   transition: background-color 2s;
 }
-.trans-red {
+.trans-blue {
   background-color: rgba(66, 165, 245, .7);;
+  transition: background-color 2s;
+}
+.trans-purple {
+  background-color: rgba(194, 119, 251, 0.7);
+  transition: background-color 2s;
+}
+.trans-red {
+  background-color: rgba(251, 119, 119, 0.7);
+  transition: background-color 2s;
+}
+.trans-green {
+  background-color: rgba(188, 251, 119, 0.7);
   transition: background-color 2s;
 }

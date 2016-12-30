@@ -23,6 +23,7 @@ export default class WhiteOverlay extends Component {
       $('.white-overlay').toggle('slide',{direction:'up'}, 800);
       $('#nav-icon').css({'color':'black'});
       $('.activate-menu').hide();
+      $('.main-box').fadeOut(500);
       slide1.fadeOut(100);
       slide2.fadeOut(100);
       slide3.fadeOut(100);
@@ -99,7 +100,8 @@ export default class WhiteOverlay extends Component {
       slide1.find('#single').fadeOut();
       slide1.find('#double').fadeOut();
 
-        $('.white-overlay').removeClass('trans-red').addClass('trans-white');
+        $('.white-overlay').removeClass('trans-blue').addClass('trans-white');
+        $('.main-box').fadeIn();
     });
   }
   render() {

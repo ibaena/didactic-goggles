@@ -65,6 +65,7 @@ export default class Slider extends Component {
               case 'project-1':
               var i = 0;
                 do {
+                  $('.white-overlay').addClass('trans-white').removeClass('trans-purple trans-red trans-green');
                   slide2.find('.project-image').find('.fw-image').hide('slide',{direction:'left'},600);
                   slide2.find('.project-description').find('.role-wrapper').hide('slide',{direction:'right'},600);
                   slide2.find('.project-description').find('.project-title').hide('slide',{direction:'up'},600);
@@ -107,7 +108,7 @@ export default class Slider extends Component {
                       slide1.find('#single').animate({ width: 'toggle'},500);
                       slide1.find('#double').animate({ width: 'toggle'},500);
                       slide1.find('.project-description').find('.web-link').toggle('slide',{direction:'left'},400);
-                      $('.white-overlay').toggleClass('trans-white trans-red');
+                      $('.white-overlay').toggleClass('trans-white trans-blue').removeClass('trans-purple trans-green trans-red');
                   },200);
 
                   slide2.hide();
@@ -120,6 +121,7 @@ export default class Slider extends Component {
               case 'project-2':
                 var i = 0;
                   do {
+                    $('.white-overlay').addClass('trans-white').removeClass('trans-blue trans-red trans-green');
                     slide1.find('.project-image').find('.fw-image').hide('slide',{direction:'left'},600);
                     slide1.find('.project-description').find('.role-wrapper').hide('slide',{direction:'right'},600);
                     slide1.find('.project-description').find('.project-title').hide('slide',{direction:'up'},600);
@@ -159,6 +161,7 @@ export default class Slider extends Component {
                         slide2.find('#single').animate({ width: 'toggle'},500);
                         slide2.find('#double').animate({ width: 'toggle'},500);
                         slide2.find('.project-description').find('.web-link').toggle('slide',{direction:'left'},400);
+                        $('.white-overlay').toggleClass('trans-white trans-purple').removeClass('trans-blue trans-red trans-green');
                     },200);
 
                     slide1.hide();
@@ -170,6 +173,7 @@ export default class Slider extends Component {
               case 'project-3':
               var i = 0;
                 do {
+                  $('.white-overlay').addClass('trans-white').removeClass('trans-blue trans-purple trans-green');
                   slide1.find('.project-image').find('.fw-image').hide('slide',{direction:'left'},600);
                   slide1.find('.project-description').find('.role-wrapper').hide('slide',{direction:'right'},600);
                   slide1.find('.project-description').find('.project-title').hide('slide',{direction:'up'},600);
@@ -210,6 +214,7 @@ export default class Slider extends Component {
                       slide3.find('#single').animate({ width: 'toggle'},500);
                       slide3.find('#double').animate({ width: 'toggle'},500);
                       slide3.find('.project-description').find('.web-link').toggle('slide',{direction:'left'},400);
+                      $('.white-overlay').toggleClass('trans-white trans-red').removeClass('trans-purple trans-blue trans-green');
                   },200);
 
                   slide1.hide();
@@ -222,6 +227,8 @@ export default class Slider extends Component {
               var i = 0;
               console.log(i);
                 do {
+                  $('.white-overlay').addClass('trans-white').removeClass('trans-blue trans-red trans-purple');
+
                   slide1.find('#single').animate({ width: 'toggle'},500);
                   slide1.find('#double').animate({ width: 'toggle'},500);
 
@@ -264,6 +271,7 @@ export default class Slider extends Component {
                       slide4.find('#single').animate({ width: 'toggle'},500);
                       slide4.find('#double').animate({ width: 'toggle'},500);
                       slide4.find('.project-description').find('.web-link').toggle('slide',{direction:'left'},400);
+                      $('.white-overlay').toggleClass('trans-white trans-green').removeClass('trans-purple trans-blue trans-red');
                   },200);
 
                   slide1.hide();
