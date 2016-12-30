@@ -100,7 +100,7 @@ export default class WhiteOverlay extends Component {
       slide1.find('#single').fadeOut();
       slide1.find('#double').fadeOut();
 
-        $('.white-overlay').removeClass('trans-blue').addClass('trans-white');
+        $('.white-overlay').removeClass('trans-blue trans-purple trans-red trans-green').addClass('trans-white');
         $('.main-box').fadeIn();
     });
   }
