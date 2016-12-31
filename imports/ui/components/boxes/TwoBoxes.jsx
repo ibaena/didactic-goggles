@@ -11,8 +11,8 @@ export default class TwoBoxes extends Component {
   }
 
   componentDidMount(){
-    $( ".box-one" ).draggable({ containment: 'parent' });
-    $( ".box-two" ).draggable({ containment: 'parent' });
+    /*$( ".box-one" ).draggable({ containment: 'parent' });
+    $( ".box-two" ).draggable({ containment: 'parent' });*/
   }
   render() {
     return (

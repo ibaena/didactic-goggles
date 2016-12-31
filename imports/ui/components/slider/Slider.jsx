@@ -60,32 +60,34 @@ export default class Slider extends Component {
           let slide3 = $('.slider-container').find('#3');
           let slide4 = $('.slider-container').find('#4');
 
+          let speed = 1100;
+          let single = 700;
 
           switch (compare) {
               case 'project-1':
               var i = 0;
                 do {
                   $('.white-overlay').addClass('trans-white').removeClass('trans-purple trans-red trans-green');
-                  slide2.find('.project-image').find('.fw-image').hide('slide',{direction:'left'},600);
-                  slide2.find('.project-description').find('.role-wrapper').hide('slide',{direction:'right'},600);
-                  slide2.find('.project-description').find('.project-title').hide('slide',{direction:'up'},600);
-                  slide2.find('.project-description').find('.project-info').hide('slide',{direction:'down'},600);
+                  slide2.find('.project-image').find('.fw-image').hide('slide',{direction:'left'},single);
+                  slide2.find('.project-description').find('.role-wrapper').hide('slide',{direction:'right'},single);
+                  slide2.find('.project-description').find('.project-title').hide('slide',{direction:'up'},single);
+                  slide2.find('.project-description').find('.project-info').hide('slide',{direction:'down'},single);
                   slide2.find('.project-description').find('.web-link').hide('slide',{direction:'left'},400);
                   slide2.find('#single').fadeOut();
                   slide2.find('#double').fadeOut();
 
-                  slide3.find('.project-image').find('.fw-image').hide('slide',{direction:'left'},600);
-                  slide3.find('.project-description').find('.role-wrapper').hide('slide',{direction:'right'},600);
-                  slide3.find('.project-description').find('.project-title').hide('slide',{direction:'up'},600);
-                  slide3.find('.project-description').find('.project-info').hide('slide',{direction:'down'},600);
+                  slide3.find('.project-image').find('.fw-image').hide('slide',{direction:'left'},single);
+                  slide3.find('.project-description').find('.role-wrapper').hide('slide',{direction:'right'},single);
+                  slide3.find('.project-description').find('.project-title').hide('slide',{direction:'up'},single);
+                  slide3.find('.project-description').find('.project-info').hide('slide',{direction:'down'},single);
                   slide3.find('.project-description').find('.web-link').hide('slide',{direction:'left'},400);
                   slide3.find('#single').fadeOut();
                   slide3.find('#double').fadeOut();
 
-                  slide4.find('.project-image').find('.fw-image').hide('slide',{direction:'left'},600);
-                  slide4.find('.project-description').find('.role-wrapper').hide('slide',{direction:'right'},600);
-                  slide4.find('.project-description').find('.project-title').hide('slide',{direction:'up'},600);
-                  slide4.find('.project-description').find('.project-info').hide('slide',{direction:'down'},600);
+                  slide4.find('.project-image').find('.fw-image').hide('slide',{direction:'left'},single);
+                  slide4.find('.project-description').find('.role-wrapper').hide('slide',{direction:'right'},single);
+                  slide4.find('.project-description').find('.project-title').hide('slide',{direction:'up'},single);
+                  slide4.find('.project-description').find('.project-info').hide('slide',{direction:'down'},single);
                   slide4.find('.project-description').find('.web-link').hide('slide',{direction:'left'},400);
                   slide4.find('#single').fadeOut();
                   slide4.find('#double').fadeOut();
@@ -97,10 +99,10 @@ export default class Slider extends Component {
                 setTimeout( () => {
                   slide1.show();
 
-                  slide1.find('.project-image').find('.fw-image').toggle('slide',{direction:'left'},600);
-                  slide1.find('.project-description').find('.role-wrapper').toggle('slide',{direction:'right'},600);
-                  slide1.find('.project-description').find('.project-title').toggle('slide',{direction:'up'},600);
-                  slide1.find('.project-description').find('.project-info').toggle('slide',{direction:'down'},600);
+                  slide1.find('.project-image').find('.fw-image').toggle('slide',{direction:'left'},single);
+                  slide1.find('.project-description').find('.role-wrapper').toggle('slide',{direction:'right'},single);
+                  slide1.find('.project-description').find('.project-title').toggle('slide',{direction:'up'},single);
+                  slide1.find('.project-description').find('.project-info').toggle('slide',{direction:'down'},single);
 
 
 
@@ -114,7 +116,7 @@ export default class Slider extends Component {
                   slide2.hide();
                   slide3.hide();
                   slide4.hide();
-                },800);
+                },speed);
 
 
                   break;
@@ -122,26 +124,26 @@ export default class Slider extends Component {
                 var i = 0;
                   do {
                     $('.white-overlay').addClass('trans-white').removeClass('trans-blue trans-red trans-green');
-                    slide1.find('.project-image').find('.fw-image').hide('slide',{direction:'left'},600);
-                    slide1.find('.project-description').find('.role-wrapper').hide('slide',{direction:'right'},600);
-                    slide1.find('.project-description').find('.project-title').hide('slide',{direction:'up'},600);
-                    slide1.find('.project-description').find('.project-info').hide('slide',{direction:'down'},600);
+                    slide1.find('.project-image').find('.fw-image').hide('slide',{direction:'left'},single);
+                    slide1.find('.project-description').find('.role-wrapper').hide('slide',{direction:'right'},single);
+                    slide1.find('.project-description').find('.project-title').hide('slide',{direction:'up'},single);
+                    slide1.find('.project-description').find('.project-info').hide('slide',{direction:'down'},single);
                     slide1.find('.project-description').find('.web-link').hide('slide',{direction:'left'},400);
                     slide1.find('#single').fadeOut();
                     slide1.find('#double').fadeOut();
 
-                    slide3.find('.project-image').find('.fw-image').hide('slide',{direction:'left'},600);
-                    slide3.find('.project-description').find('.role-wrapper').hide('slide',{direction:'right'},600);
-                    slide3.find('.project-description').find('.project-title').hide('slide',{direction:'up'},600);
-                    slide3.find('.project-description').find('.project-info').hide('slide',{direction:'down'},600);
+                    slide3.find('.project-image').find('.fw-image').hide('slide',{direction:'left'},single);
+                    slide3.find('.project-description').find('.role-wrapper').hide('slide',{direction:'right'},single);
+                    slide3.find('.project-description').find('.project-title').hide('slide',{direction:'up'},single);
+                    slide3.find('.project-description').find('.project-info').hide('slide',{direction:'down'},single);
                     slide3.find('.project-description').find('.web-link').hide('slide',{direction:'left'},400);
                     slide3.find('#single').fadeOut();
                     slide3.find('#double').fadeOut();
 
-                    slide4.find('.project-image').find('.fw-image').hide('slide',{direction:'left'},600);
-                    slide4.find('.project-description').find('.role-wrapper').hide('slide',{direction:'right'},600);
-                    slide4.find('.project-description').find('.project-title').hide('slide',{direction:'up'},600);
-                    slide4.find('.project-description').find('.project-info').hide('slide',{direction:'down'},600);
+                    slide4.find('.project-image').find('.fw-image').hide('slide',{direction:'left'},single);
+                    slide4.find('.project-description').find('.role-wrapper').hide('slide',{direction:'right'},single);
+                    slide4.find('.project-description').find('.project-title').hide('slide',{direction:'up'},single);
+                    slide4.find('.project-description').find('.project-info').hide('slide',{direction:'down'},single);
                     slide4.find('.project-description').find('.web-link').hide('slide',{direction:'left'},400);
                     slide4.find('#single').fadeOut();
                     slide4.find('#double').fadeOut();
@@ -152,10 +154,10 @@ export default class Slider extends Component {
                 setTimeout( () => {
                     slide2.show();
 
-                    slide2.find('.project-image').find('.fw-image').toggle('slide',{direction:'left'},600);
-                    slide2.find('.project-description').find('.role-wrapper').toggle('slide',{direction:'right'},600);
-                    slide2.find('.project-description').find('.project-title').toggle('slide',{direction:'up'},600);
-                    slide2.find('.project-description').find('.project-info').toggle('slide',{direction:'down'},600);
+                    slide2.find('.project-image').find('.fw-image').toggle('slide',{direction:'left'},single);
+                    slide2.find('.project-description').find('.role-wrapper').toggle('slide',{direction:'right'},single);
+                    slide2.find('.project-description').find('.project-title').toggle('slide',{direction:'up'},single);
+                    slide2.find('.project-description').find('.project-info').toggle('slide',{direction:'down'},single);
 
                     setTimeout( () => {
                         slide2.find('#single').animate({ width: 'toggle'},500);
@@ -167,33 +169,33 @@ export default class Slider extends Component {
                     slide1.hide();
                     slide4.hide();
                     slide3.hide();
-                },800)
+                },speed)
 
                   break;
               case 'project-3':
               var i = 0;
                 do {
                   $('.white-overlay').addClass('trans-white').removeClass('trans-blue trans-purple trans-green');
-                  slide1.find('.project-image').find('.fw-image').hide('slide',{direction:'left'},600);
-                  slide1.find('.project-description').find('.role-wrapper').hide('slide',{direction:'right'},600);
-                  slide1.find('.project-description').find('.project-title').hide('slide',{direction:'up'},600);
-                  slide1.find('.project-description').find('.project-info').hide('slide',{direction:'down'},600);
+                  slide1.find('.project-image').find('.fw-image').hide('slide',{direction:'left'},single);
+                  slide1.find('.project-description').find('.role-wrapper').hide('slide',{direction:'right'},single);
+                  slide1.find('.project-description').find('.project-title').hide('slide',{direction:'up'},single);
+                  slide1.find('.project-description').find('.project-info').hide('slide',{direction:'down'},single);
                   slide1.find('.project-description').find('.web-link').hide('slide',{direction:'left'},400);
                   slide1.find('#single').fadeOut();
                   slide1.find('#double').fadeOut();
 
-                  slide2.find('.project-image').find('.fw-image').hide('slide',{direction:'left'},600);
-                  slide2.find('.project-description').find('.role-wrapper').hide('slide',{direction:'right'},600);
-                  slide2.find('.project-description').find('.project-title').hide('slide',{direction:'up'},600);
-                  slide2.find('.project-description').find('.project-info').hide('slide',{direction:'down'},600);
+                  slide2.find('.project-image').find('.fw-image').hide('slide',{direction:'left'},single);
+                  slide2.find('.project-description').find('.role-wrapper').hide('slide',{direction:'right'},single);
+                  slide2.find('.project-description').find('.project-title').hide('slide',{direction:'up'},single);
+                  slide2.find('.project-description').find('.project-info').hide('slide',{direction:'down'},single);
                   slide2.find('.project-description').find('.web-link').hide('slide',{direction:'left'},400);
                   slide2.find('#single').fadeOut();
                   slide2.find('#double').fadeOut();
 
-                  slide4.find('.project-image').find('.fw-image').hide('slide',{direction:'left'},600);
-                  slide4.find('.project-description').find('.role-wrapper').hide('slide',{direction:'right'},600);
-                  slide4.find('.project-description').find('.project-title').hide('slide',{direction:'up'},600);
-                  slide4.find('.project-description').find('.project-info').hide('slide',{direction:'down'},600);
+                  slide4.find('.project-image').find('.fw-image').hide('slide',{direction:'left'},single);
+                  slide4.find('.project-description').find('.role-wrapper').hide('slide',{direction:'right'},single);
+                  slide4.find('.project-description').find('.project-title').hide('slide',{direction:'up'},single);
+                  slide4.find('.project-description').find('.project-info').hide('slide',{direction:'down'},single);
                   slide4.find('.project-description').find('.web-link').hide('slide',{direction:'left'},400);
                   slide4.find('#single').fadeOut();
                   slide4.find('#double').fadeOut();
@@ -205,10 +207,10 @@ export default class Slider extends Component {
               setTimeout( () => {
                   slide3.show();
 
-                  slide3.find('.project-image').find('.fw-image').toggle('slide',{direction:'left'},600);
-                  slide3.find('.project-description').find('.role-wrapper').toggle('slide',{direction:'right'},600);
-                  slide3.find('.project-description').find('.project-title').toggle('slide',{direction:'up'},600);
-                  slide3.find('.project-description').find('.project-info').toggle('slide',{direction:'down'},600);
+                  slide3.find('.project-image').find('.fw-image').toggle('slide',{direction:'left'},single);
+                  slide3.find('.project-description').find('.role-wrapper').toggle('slide',{direction:'right'},single);
+                  slide3.find('.project-description').find('.project-title').toggle('slide',{direction:'up'},single);
+                  slide3.find('.project-description').find('.project-info').toggle('slide',{direction:'down'},single);
 
                   setTimeout( () => {
                       slide3.find('#single').animate({ width: 'toggle'},500);
@@ -220,7 +222,7 @@ export default class Slider extends Component {
                   slide1.hide();
                   slide4.hide();
                   slide2.hide();
-              },800)
+              },speed)
                   break;
               case 'project-4':
 
@@ -232,26 +234,26 @@ export default class Slider extends Component {
                   slide1.find('#single').animate({ width: 'toggle'},500);
                   slide1.find('#double').animate({ width: 'toggle'},500);
 
-                  slide1.find('.project-image').find('.fw-image').hide('slide',{direction:'left'},600);
-                  slide1.find('.project-description').find('.role-wrapper').hide('slide',{direction:'right'},600);
-                  slide1.find('.project-description').find('.project-title').hide('slide',{direction:'up'},600);
-                  slide1.find('.project-description').find('.project-info').hide('slide',{direction:'down'},600);
+                  slide1.find('.project-image').find('.fw-image').hide('slide',{direction:'left'},single);
+                  slide1.find('.project-description').find('.role-wrapper').hide('slide',{direction:'right'},single);
+                  slide1.find('.project-description').find('.project-title').hide('slide',{direction:'up'},single);
+                  slide1.find('.project-description').find('.project-info').hide('slide',{direction:'down'},single);
                   slide1.find('.project-description').find('.web-link').hide('slide',{direction:'left'},400);
                   slide1.find('#single').fadeOut();
                   slide1.find('#double').fadeOut();
 
-                  slide3.find('.project-image').find('.fw-image').hide('slide',{direction:'left'},600);
-                  slide3.find('.project-description').find('.role-wrapper').hide('slide',{direction:'right'},600);
-                  slide3.find('.project-description').find('.project-title').hide('slide',{direction:'up'},600);
-                  slide3.find('.project-description').find('.project-info').hide('slide',{direction:'down'},600);
+                  slide3.find('.project-image').find('.fw-image').hide('slide',{direction:'left'},single);
+                  slide3.find('.project-description').find('.role-wrapper').hide('slide',{direction:'right'},single);
+                  slide3.find('.project-description').find('.project-title').hide('slide',{direction:'up'},single);
+                  slide3.find('.project-description').find('.project-info').hide('slide',{direction:'down'},single);
                   slide3.find('.project-description').find('.web-link').hide('slide',{direction:'left'},400);
                   slide3.find('#single').fadeOut();
                   slide3.find('#double').fadeOut();
 
-                  slide2.find('.project-image').find('.fw-image').hide('slide',{direction:'left'},600);
-                  slide2.find('.project-description').find('.role-wrapper').hide('slide',{direction:'right'},600);
-                  slide2.find('.project-description').find('.project-title').hide('slide',{direction:'up'},600);
-                  slide2.find('.project-description').find('.project-info').hide('slide',{direction:'down'},600);
+                  slide2.find('.project-image').find('.fw-image').hide('slide',{direction:'left'},single);
+                  slide2.find('.project-description').find('.role-wrapper').hide('slide',{direction:'right'},single);
+                  slide2.find('.project-description').find('.project-title').hide('slide',{direction:'up'},single);
+                  slide2.find('.project-description').find('.project-info').hide('slide',{direction:'down'},single);
                   slide2.find('.project-description').find('.web-link').hide('slide',{direction:'left'},400);
                   slide2.find('#single').fadeOut();
                   slide2.find('#double').fadeOut();
@@ -262,10 +264,10 @@ export default class Slider extends Component {
               setTimeout( () => {
                   slide4.show();
 
-                  slide4.find('.project-image').find('.fw-image').toggle('slide',{direction:'left'},600);
-                  slide4.find('.project-description').find('.role-wrapper').toggle('slide',{direction:'right'},600);
-                  slide4.find('.project-description').find('.project-title').toggle('slide',{direction:'up'},600);
-                  slide4.find('.project-description').find('.project-info').toggle('slide',{direction:'down'},600);
+                  slide4.find('.project-image').find('.fw-image').toggle('slide',{direction:'left'},single);
+                  slide4.find('.project-description').find('.role-wrapper').toggle('slide',{direction:'right'},single);
+                  slide4.find('.project-description').find('.project-title').toggle('slide',{direction:'up'},single);
+                  slide4.find('.project-description').find('.project-info').toggle('slide',{direction:'down'},single);
 
                   setTimeout( () => {
                       slide4.find('#single').animate({ width: 'toggle'},500);
@@ -277,7 +279,7 @@ export default class Slider extends Component {
                   slide1.hide();
                   slide2.hide();
                   slide3.hide();
-              },800)
+              },speed)
                   break;
           }
 

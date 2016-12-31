@@ -2,7 +2,7 @@
     Overlay Styles
 ***********************/
 .white-overlay {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.4);
     position: absolute;
     height: 100%;
     width: 100%;
@@ -27,11 +27,11 @@
 }
 
 .trans-white {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.4);
   transition: background-color 2s;
 }
 .trans-blue {
-  background-color: rgba(66, 165, 245, .7);;
+  background-color: rgba(66, 165, 245, .7);
   transition: background-color 2s;
 }
 .trans-purple {

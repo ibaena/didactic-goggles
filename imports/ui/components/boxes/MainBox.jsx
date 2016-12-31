@@ -12,13 +12,13 @@ export default class MainBox extends Component {
 
   componentDidMount(){
     $('.main-box-overlay').hide();
-    $('.main-box').on('mouseenter', () => {
+    /*$('.main-box').on('mouseenter', () => {
       $('.main-box-overlay').show('slide', {direction: 'left'}, 400);
 
     });
     $('.main-box').on('mouseleave', () => {
       $('.main-box-overlay').hide('slide', {direction: 'left'}, 400);
-    });
+    });*/
   }
   render() {
     return (

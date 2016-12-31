@@ -25,7 +25,7 @@ export default class Selector extends Component {
 
   renderImages() {
     return this.getImages().map((item) => (
-      <li className="selector-list-item" id={'project-'+item._id} key={item._id} ref={'project-'+item._id}><img src={item.project_src} className="selector-image" /></li>
+      <li className="selector-list-item" id={'project-'+item._id} key={item._id} ref={'project-'+item._id}><img src={item.project_src} className="selector-image" id={'proj-img-'+item._id} /></li>
     ));
   }
 

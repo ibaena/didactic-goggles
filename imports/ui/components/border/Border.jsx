@@ -4,6 +4,7 @@ import Nav from '../nav/Nav.jsx';
 import MainBox from '../boxes/MainBox.jsx';
 import TwoBoxes from '../boxes/TwoBoxes.jsx';
 import WhiteOverlay from '../overlay/WhiteOverlay.jsx';
+import Vertical from '../slider/Vertical.jsx';
 
 // App component - represents the whole app
 export default class Border extends Component {
@@ -21,6 +22,7 @@ export default class Border extends Component {
       <div className="border">
         <Nav />
         <MainBox />
+        <TwoBoxes />
         <WhiteOverlay />
       </div>
     );

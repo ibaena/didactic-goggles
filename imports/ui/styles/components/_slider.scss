@@ -106,10 +106,7 @@
             margin-left: 3vw;
 
             .selector-image {
-                border-style: solid;
-                border-width: thin;
                 border-radius: 3px;
-                border-color: #c3c3c3;
                 padding: 0.5em;
                 cursor: pointer;
                 display: block;
@@ -117,7 +114,7 @@
                 width: calc(11em - 5px);
                 margin: 0 auto;
             }
-        }
+          }
     }
 }
 
@@ -141,4 +138,16 @@
     position: fixed;
     top: 20%;
     left: 75%;
+}
+#proj-img-1 {
+  background-color: rgba(66, 165, 245, 0.7);
+}
+#proj-img-2 {
+  background-color: rgba(194, 119, 251, 0.7);
+}
+#proj-img-3 {
+  background-color: rgba(251, 119, 119, 0.7);
+}
+#proj-img-4 {
+  background-color: rgba(188, 251, 119, 0.7);
 }
